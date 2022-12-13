@@ -78,29 +78,19 @@ To run the project,
 Once the ETL process is complete, the following sample queries can be run;
 **1. Top 5 most played songs**
 
-SELECT sp.song_id, s.title, count(*) AS count 
-    FROM songplays sp
-    JOIN songs s
-      ON sp.song_id = s.song_id
-GROUP BY 1, 2
-ORDER BY 3 DESC
-   LIMIT 5;
+![top 5 songs query](https://user-images.githubusercontent.com/116004104/207312275-06aa30ab-e297-4038-be6b-c05a03847873.JPG)
+
    
    
-   ![top 5 songs](https://user-images.githubusercontent.com/116004104/207310864-1090053e-5639-4a2d-84b6-452572ea410a.JPG)
+![top 5 songs](https://user-images.githubusercontent.com/116004104/207310864-1090053e-5639-4a2d-84b6-452572ea410a.JPG)
 
    
 **2. Top 5 artists**
 
-SELECT sp.artist_id, a.name AS artist_name, count(*) AS count
-    FROM songplays sp
-    JOIN artists a
-      ON sp.artist_id = a.artist_id
-GROUP BY 1, 2
-ORDER BY 3 DESC
-   LIMIT 5;
-   
-   ![Top 5 artists](https://user-images.githubusercontent.com/116004104/207310896-303958fc-01a7-40c8-bebc-49e252900d95.JPG)
+
+![top 5 artists query](https://user-images.githubusercontent.com/116004104/207312355-f8fac4b1-067f-49ac-8304-bab758154569.JPG)
+
+![Top 5 artists](https://user-images.githubusercontent.com/116004104/207310896-303958fc-01a7-40c8-bebc-49e252900d95.JPG)
 
 
 
