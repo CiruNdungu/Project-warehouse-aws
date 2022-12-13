@@ -45,7 +45,8 @@ artists - artists in music database
 time - timestamps of records in songplays broken down into specific units
 •start_time, hour, day, week, month, year, weekday
 
-![schema text](https://user-images.githubusercontent.com/116004104/197519555-02aa2e5b-267d-4a66-9bdd-6e504d0d2828.jpeg)
+
+![schema diag](https://user-images.githubusercontent.com/116004104/207310748-829e2a9a-8748-47cb-910d-861b3c8086ed.JPG)
 
 ETL PROCESS
 
@@ -80,7 +81,8 @@ ORDER BY 3 DESC
    LIMIT 5;
    
    
-   
+   ![top 5 songs](https://user-images.githubusercontent.com/116004104/207310864-1090053e-5639-4a2d-84b6-452572ea410a.JPG)
+
    
 2. Top 5 artists
 
@@ -92,7 +94,8 @@ GROUP BY 1, 2
 ORDER BY 3 DESC
    LIMIT 5;
    
-   
+   ![Top 5 artists](https://user-images.githubusercontent.com/116004104/207310896-303958fc-01a7-40c8-bebc-49e252900d95.JPG)
+
 
 
 
