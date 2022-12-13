@@ -20,8 +20,11 @@ The task is to build an ETL pipeline that extracts data from S3, stages in Redsh
 The original data is in JSON format and resides in the AWS S3 public available data. 
 
 **Song data**: s3://udacity-dend/song_data
+
 **Log data**: s3://udacity-dend/log_data
+
 **Log data json path**: s3://udacity-dend/log_json_path.json
+
 
 Song data is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID
 
@@ -36,14 +39,15 @@ songplays - records in event data associated with song plays i.e. records with p
 
 **Dimension Tables**
 
-users - users in the app
-•user_id, first_name, last_name, gender, level
-songs - songs in music database
-•song_id, title, artist_id, year, duration
-artists - artists in music database
-•artist_id, name, location, lattitude, longitude
-time - timestamps of records in songplays broken down into specific units
-•start_time, hour, day, week, month, year, weekday
+**users** - users in the app
+
+**songs** - songs in music database
+
+**artists** - artists in music database
+
+**time** - timestamps of records in songplays broken down into specific units
+
+
 
 
 ![schema diag](https://user-images.githubusercontent.com/116004104/207310748-829e2a9a-8748-47cb-910d-861b3c8086ed.JPG)
